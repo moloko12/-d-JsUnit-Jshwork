@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var l = prompt('Login');
+        switch (l) {
+            case 'admin':
+                var p = prompt('Password');
+                switch (p) {
+                    case 'JavaScript':
+                        alert('Welcome!');
+                    break;
+                    case !'JavaScript':
+                        alert('Пароль неверен');
+                    break;
+                    default:
+                        alert('Вход отменен');
+                }
+            case '!admin':
+                alert('Я Вас не знаю...');
+            break;
+            default:
+                alert('Вход отменен');
+        }
+    </script>
+</body>
+</html>
